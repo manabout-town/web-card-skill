@@ -7,12 +7,20 @@
 - 공통 부품 코드, 사진 생성·병렬 제작·배포 절차, 모바일 함정 17개
 - 예시 사이트(법률사무소 단정, 사진 포함)와 뷰포트 7종 playwright 검증 스크립트
 
-## 설치
+## 설치 (한 줄)
+```bash
+curl -fsSL https://raw.githubusercontent.com/manabout-town/web-card-skill/main/install.sh | bash
+```
+`~/.claude/skills/web-card` 에 설치된다. Claude Code를 새로 열고 "수의사 웹명함 만들어줘"처럼 말하면 된다.
+설치 위치를 바꾸려면 `CLAUDE_SKILLS_DIR=... curl ... | bash`.
+
+<details><summary>레포를 통째로 받고 싶다면</summary>
+
 ```bash
 git clone https://github.com/manabout-town/web-card-skill.git
-cd web-card-skill && ./install.sh     # → ~/.claude/skills/web-card
+cd web-card-skill && ./install.sh
 ```
-그다음 Claude Code에서 "수의사 웹명함 만들어줘"처럼 말하면 된다.
+</details>
 
 ## 구성
 ```
